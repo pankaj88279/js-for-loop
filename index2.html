@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul class="myclass">
+           
+        </ul>
+
+        <!-- <form>
+            <input type="text" placeholder="enter youre name">
+            <input type="number" placeholder="how many greet number">
+            <input type="button" onclick="submit" value="submit">
+        </form> -->
+        <script>
+           let myclass=document.querySelector('.myclass')
+           let x=prompt("please enter your name")
+           let y=prompt("how many greet number") 
+
+           for(let i=0;i<=y;i++){
+                myclass.innerHTML+= `<li>hello ${x} good morning</li>`
+           }
+        </script>
+    </body>
+</html>
